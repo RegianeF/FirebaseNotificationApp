@@ -9,7 +9,10 @@ import com.example.firebasenotificationapp.ChatState
 import com.example.firebasenotificationapp.FcmApi
 import com.example.firebasenotificationapp.NotificationBody
 import com.example.firebasenotificationapp.SendMessageDto
+import com.google.firebase.Firebase
+import com.google.firebase.messaging.messaging
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.tasks.await
 import retrofit2.HttpException
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
@@ -27,6 +30,13 @@ class ChatViewModel(
         .addConverterFactory(MoshiConverterFactory.create())
         .build()
         .create()
+
+    init {
+        viewModelScope.launch {
+            Firebase.messaging.subscribeToTopic("chat").await()
+        }
+
+    }
 
 
     var state by mutableStateOf(ChatState())

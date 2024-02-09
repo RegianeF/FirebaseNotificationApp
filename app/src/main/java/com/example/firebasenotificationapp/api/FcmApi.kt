@@ -1,5 +1,6 @@
-package com.example.firebasenotificationapp
+package com.example.firebasenotificationapp.api
 
+import com.example.firebasenotificationapp.model.SendMessageDto
 import retrofit2.http.Body
 import retrofit2.http.POST
 

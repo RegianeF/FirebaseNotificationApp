@@ -1,4 +1,4 @@
-package com.example.firebasenotificationapp
+package com.example.firebasenotificationapp.ui.chat
 
 data class ChatState(
     val isEnteringToken: Boolean = true,

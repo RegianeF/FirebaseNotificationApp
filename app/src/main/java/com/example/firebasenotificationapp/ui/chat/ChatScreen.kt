@@ -1,4 +1,4 @@
-package com.example.firebasenotificationapp.ui
+package com.example.firebasenotificationapp.ui.chat
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column

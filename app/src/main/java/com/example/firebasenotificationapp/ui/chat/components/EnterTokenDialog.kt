@@ -1,4 +1,4 @@
-package com.example.firebasenotificationapp.ui
+package com.example.firebasenotificationapp.ui.chat.components
 
 import android.widget.Toast
 import androidx.compose.foundation.background

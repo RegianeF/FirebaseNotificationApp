@@ -1,14 +1,13 @@
-package com.example.firebasenotificationapp.ui
+package com.example.firebasenotificationapp.ui.chat
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.firebasenotificationapp.ChatState
-import com.example.firebasenotificationapp.FcmApi
-import com.example.firebasenotificationapp.NotificationBody
-import com.example.firebasenotificationapp.SendMessageDto
+import com.example.firebasenotificationapp.api.FcmApi
+import com.example.firebasenotificationapp.model.NotificationBody
+import com.example.firebasenotificationapp.model.SendMessageDto
 import com.google.firebase.Firebase
 import com.google.firebase.messaging.messaging
 import kotlinx.coroutines.launch

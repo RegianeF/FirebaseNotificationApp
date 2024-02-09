@@ -1,4 +1,4 @@
-package com.example.firebasenotificationapp
+package com.example.firebasenotificationapp.service
 
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage

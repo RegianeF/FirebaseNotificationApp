@@ -1,4 +1,4 @@
-package com.example.firebasenotificationapp
+package com.example.firebasenotificationapp.ui
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -13,9 +13,9 @@ import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import com.example.firebasenotificationapp.ui.ChatScreen
-import com.example.firebasenotificationapp.ui.ChatViewModel
-import com.example.firebasenotificationapp.ui.EnterTokenDialog
+import com.example.firebasenotificationapp.ui.chat.ChatScreen
+import com.example.firebasenotificationapp.ui.chat.ChatViewModel
+import com.example.firebasenotificationapp.ui.chat.components.EnterTokenDialog
 import com.example.firebasenotificationapp.ui.theme.FirebaseNotificationAppTheme
 
 class MainActivity : ComponentActivity() {

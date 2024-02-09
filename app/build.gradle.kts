@@ -64,6 +64,9 @@ dependencies {
     implementation(libs.firebase.messaging)
     implementation(libs.retrofit)
     implementation(libs.moshi)
+    implementation(libs.koin.core)
+    implementation(libs.koin.android)
+    implementation(libs.koin.compose)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

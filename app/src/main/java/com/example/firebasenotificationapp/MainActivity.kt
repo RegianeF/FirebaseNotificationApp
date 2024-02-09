@@ -13,6 +13,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.example.firebasenotificationapp.ui.ChatScreen
 import com.example.firebasenotificationapp.ui.ChatViewModel
 import com.example.firebasenotificationapp.ui.EnterTokenDialog
 import com.example.firebasenotificationapp.ui.theme.FirebaseNotificationAppTheme
@@ -28,7 +29,6 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             FirebaseNotificationAppTheme {
-                // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
@@ -43,7 +43,7 @@ class MainActivity : ComponentActivity() {
                         )
                     } else {
                         ChatScreen(
-                            messageText = state.remoteToken,
+                            messageText = state.messageText,
                             onMessageSend = {
                                 viewModel.sendMessage(isBroadcast = false)
                             },

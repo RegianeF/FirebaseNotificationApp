@@ -20,9 +20,7 @@ import retrofit2.create
 import java.io.IOException
 import java.lang.Exception
 
-class ChatViewModel(
-
-) : ViewModel() {
+class ChatViewModel : ViewModel() {
 
     //passar por injeção - IP ADDRESS WI-FI
     private val api: FcmApi = Retrofit.Builder()
